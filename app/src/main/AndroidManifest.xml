@@ -17,13 +17,21 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
 
-        <activity android:name=".CourseDetailActivity"
+            </activity>
+
+        <activity
+            android:name=".CourseDetailActivity"
             android:label="Course Detail"
             android:launchMode="singleTop">
-
-            <meta-data android:name= "android.support.PARENT_ACTIVITY" android:value="MainActivity"/>
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".CourseLessonActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CourseDetailActivity" />
         </activity>
     </application>
 
